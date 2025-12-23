@@ -1,16 +1,70 @@
-# React + Vite
+# 🪄 Background Remover SaaS  
+**AI-powered background removal with subscription plans & Razorpay payments**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that allows users to upload images, automatically remove backgrounds using AI, and access premium features through **subscription plans** powered by **Razorpay payment integration**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### ✂️ Core Functionality
+- Upload image (PNG / JPG / JPEG)
+- Automatic background removal using AI
+- Preview before & after result
+- Download processed image (transparent PNG)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 Authentication
+- User signup & login
+- Secure session handling
+- User dashboard
 
-## Expanding the ESLint configuration
+### 💳 Subscription & Payments
+- Free & paid subscription plans
+- Razorpay payment gateway integration
+- Monthly / yearly plans
+- Payment verification & webhook handling
+- Access control based on subscription status
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📊 User Dashboard
+- Upload history
+- Remaining credits (for free users)
+- Subscription status & renewal info
+- Download history
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- React
+- Tailwind CSS
+- Axios
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+- REST APIs
+
+### Database
+- MongoDB
+
+### Payments
+- Razorpay
+- Razorpay Orders API
+- Webhook verification
+
+### AI / Image Processing
+- Background Removal API (e.g. Remove.bg / custom ML service)
+
+---
+## 💳 Razorpay Payment Flow
+
+1. User selects a subscription plan  
+2. Backend creates Razorpay order  
+3. Frontend opens Razorpay Checkout  
+4. Payment completed by user  
+5. Razorpay sends webhook  
+6. Backend verifies payment signature  
+7. Subscription activated for user  
