@@ -5,10 +5,12 @@ import Result from './pages/Result'
 import BuyCredit from './pages/BuyCredit'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import { SignInButton } from '@clerk/clerk-react'
 const App = () => {
   return (
     <div className='min-h-screen bg-slate-50'>
       <Navbar/>
+      {/* <SignInButton /> */}
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/result' element={<Result/>}/>

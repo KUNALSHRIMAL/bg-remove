@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#f8fafc] border-t border-gray-200">
+    <footer className="fixed bottom-0 w-full bg-[#f8fafc] border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Left: Logo */}
