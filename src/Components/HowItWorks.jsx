@@ -37,7 +37,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center hover:shadow-md transition"
+              className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center hover:shadow-md hover:scale-105 transition-all duration-700"
             >
               {/* Icon */}
               <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-lg bg-violet-600">

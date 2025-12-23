@@ -23,13 +23,13 @@ export default function Footer() {
         {/* Right: Social Icons */}
         <div className="flex items-center gap-4">
           <a href="#" className="text-gray-500 hover:text-gray-800 transition">
-            <img src={assets.facebook_icon} alt="Facebook" className="w-4 h-4" />
+            <img src={assets.facebook_icon} alt="Facebook" className="w-9 h-9" />
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-800 transition">
-            <img src={assets.twitter_icon} alt="Twitter" className="w-4 h-4" />
+            <img src={assets.twitter_icon} alt="Twitter" className="w-9 h-9" />
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-800 transition">
-            <img src={assets.google_icon} alt="Google" className="w-4 h-4" />
+            <img src={assets.google_plus_icon} alt="Google" className="w-9 h-9" />
           </a>
         </div>
 

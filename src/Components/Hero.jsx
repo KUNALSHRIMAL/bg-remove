@@ -15,9 +15,13 @@ export default function Hero() {
             industry. Lorem Ipsum has been the industry’s standard dummy text
             ever.
           </p>
-          <button className="mt-8 inline-flex items-center justify-center rounded-full bg-violet-600 px-6 py-3 text-white font-medium hover:bg-violet-700 transition">
-            Upload your image
-          </button>
+          <div className="mt-8 inline-flex items-center justify-center rounded-full bg-violet-600 px-6 py-3 text-white font-medium hover:bg-violet-700 transition">
+            <input type="file" name=""  id="upload1" hidden/>
+            <label htmlFor="upload1" className="inline-flex gap-2 hover:scale-105 transition-all duration-700" >
+              <img src={assets.upload_btn_icon} alt="" className="w-4"/>
+              <p>Upload your image</p>
+            </label>
+          </div>
         </div>
 
         {/* Right Visual */}
